@@ -1,0 +1,171 @@
+/* Start Global valus */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+p {
+    font-size: 18px;
+}
+/* Start media quires */
+
+/* Desktop */
+@media (min-width:1440px) {
+    .container {
+        width: 900px;
+    }
+}
+/* large Screens */
+@media (min-width: 750px) {
+    .container {
+        width: 700px;
+    }
+}
+/*  Small Screens  */
+@media (min-width:375px) {
+    .container {
+        width: 350px;
+    }
+}
+/* Mobile phones */
+@media (max-width:375px) {
+    .container {
+        width: 100vh;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .Title1 {
+        font-size: 20px;
+    }
+    .flex1 {
+        border-radius: none;
+    }
+}
+/* End media quires */
+/* End Global values */
+/* Start flex of container */
+.container {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 475px;
+}
+/* End flex of container */
+/* Start First Flex Of Page */
+.flex1 {
+    flex: 1;
+    position: relative;
+    background-image: linear-gradient(to bottom , hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+    border-radius: 30px;
+}
+.Title1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -82.625px;
+    top: 30px;
+    font-size: 25px;
+    opacity: .5;
+}
+/* Start Cricle */
+.Cricle {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    width: 190px;
+    transform: translate(-55%,5%);
+    height: 190px;
+    color: #F3F1F6;
+    border-radius: 50%;
+    background: linear-gradient(to top, hsla(241, 72%, 46%, .5),hsla(256, 72%, 46%, 1));
+    z-index: 1;
+} 
+.Cricle h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+}
+.Cricle p {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-50%);
+    opacity: .3;
+}
+/* End Cricle */
+/* Start Paregrah in Flex one */
+.EndFlex {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,60%);
+    width: 80%;
+    text-align: center;
+    color: #F3F1F6;
+}
+.EndFlex p {
+    opacity: .8;
+}
+/* End Paregrah in Flex one */
+/* End First Flex Of Page */
+/* Start Second Flex of Page */
+.flex2 {
+    flex: 1;
+}
+.TitleofFlex2 {
+    margin: 30px;
+    font-size: 25px;
+}
+.parentofhsl  {
+    margin-left: 30px;
+}
+.parentofhsl .hsl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+}
+.parentofhsl .hsl:nth-child(1) p:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+}
+.parentofhsl .hsl:nth-child(2) p:nth-child(1) {
+    color: hsl(39, 100%, 56%);
+}
+.parentofhsl .hsl:nth-child(3) p:nth-child(1) {
+    color: hsl(166, 100%, 37%);
+}
+.parentofhsl .hsl:nth-child(4) p:nth-child(1) {
+    color: hsl(234, 85%, 45%);
+}
+.parentofhsl .hsl .icon {
+    position:relative;
+    top: 5px;
+    margin-right: 10px;
+}
+button {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: #303B59;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+button:hover {
+    background-color: #593CF8;
+}
+/* End Second Flex of Page */
+/* End Project */
